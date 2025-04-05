@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Change this if your branch is different
+      - main # Or your main branch
 
 permissions:
   contents: read
@@ -20,22 +20,22 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: "yarn"
+          node-version: 18 # Or your Node.js version
+          cache: "yarn" # Or "npm"
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile # Or npm ci
 
       - name: Build project
-        run: yarn build
+        run: yarn build # Or your build command
 
       - name: Ensure CNAME file exists
-        run: echo "wordmean.app" > dist/CNAME
+        run: echo "wordmean.app" > dist/CNAME # Adds CNAME file
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist # Or your build output directory
 
   deploy:
     runs-on: ubuntu-latest
