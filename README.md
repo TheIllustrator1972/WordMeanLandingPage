@@ -1,2 +1,1 @@
-# WordMeanLandingPage
-Word Mean App Landing Page
+# WordMean App Landing Page
