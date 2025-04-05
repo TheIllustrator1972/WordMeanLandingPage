@@ -30,12 +30,12 @@ jobs:
         run: yarn build # Or your build command
 
       - name: Ensure CNAME file exists
-        run: echo "wordmean.app" > dist/CNAME # Adds CNAME file
+        run: echo "wordmean.app" > docs/CNAME # Adds CNAME file
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist # Or your build output directory
+          path: docs # Or your build output directory
 
   deploy:
     runs-on: ubuntu-latest
