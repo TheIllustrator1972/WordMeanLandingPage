@@ -21,7 +21,7 @@ function App() {
                 {images?.map((_image) => (
                   <Box>
                     <img
-                      src={`/images/${_image}.png`}
+                      src={`images/${_image}.png`}
                       style={classes.previewImage}
                     />
                   </Box>
