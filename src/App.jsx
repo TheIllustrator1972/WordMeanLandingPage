@@ -19,7 +19,13 @@ function App() {
             <Stack sx={classes.imagesContainer}>
               <Stack sx={classes.imagesInnerContainer}>
                 {images?.map((_image) => (
-                  <Box>
+                  <Box
+                    sx={{
+                      width: { sm: "90%" },
+                      alignItems: { sm: "center" },
+                      justifyContent: { sm: "center" },
+                    }}
+                  >
                     <img
                       src={`images/${_image}.png`}
                       style={classes.previewImage}
