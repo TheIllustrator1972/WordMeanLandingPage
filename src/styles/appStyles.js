@@ -61,5 +61,11 @@ export const classes = {
     color: styles.color.white,
     fontWeight: 500,
     fontSize: "24px",
+    textAlign: "center",
+  },
+  imageBox: {
+    width: { sm: "90%" },
+    alignItems: { sm: "center" },
+    justifyContent: { sm: "center" },
   },
 };
