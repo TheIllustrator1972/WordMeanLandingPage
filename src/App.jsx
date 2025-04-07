@@ -4,6 +4,7 @@ import { classes } from "./styles/appStyles";
 import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import PrivacyPolicy from "./PrivacyPolicy";
 import { styles } from "./style";
+import EmailIcon from "@mui/icons-material/Email";
 
 const images = ["initial", "empty", "search", "meaning"];
 
@@ -38,6 +39,25 @@ function App() {
                   <Typography sx={classes.comingSoonText}>
                     Coming Soon on the app store
                   </Typography>
+                  <Stack
+                    sx={{ flexDirection: "row", gap: 3, alignItems: "center" }}
+                  >
+                    <Typography sx={classes.comingSoonText}>
+                      Contact Me{" "}
+                    </Typography>
+                    <a
+                      href="mailto:theillustrator2001@gmail.com"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <EmailIcon
+                        onClick={() => {}}
+                        sx={{
+                          color: styles.color.primaryYellow,
+                          fontSize: "24px",
+                        }}
+                      />
+                    </a>
+                  </Stack>
                 </Stack>
               </Stack>
             </Stack>

@@ -9,14 +9,14 @@ export const classes = {
     justifyContent: "center",
   },
   innerContainer: {
-    gap: 5,
+    gap: 3,
     alignItems: "center",
     width: { lg: "70%", md: "85%" },
     height: { lg: "80%", md: "90%" },
   },
   headerContainer: {
     display: "flex",
-    flexDirection: "row",
+    gap: 1,
     alignItems: "center",
     justifyContent: "space-between",
   },
