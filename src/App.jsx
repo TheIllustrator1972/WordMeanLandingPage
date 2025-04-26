@@ -5,6 +5,7 @@ import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import PrivacyPolicy from "./PrivacyPolicy";
 import { styles } from "./style";
 import EmailIcon from "@mui/icons-material/Email";
+import DownloadOnAppStoreImage from "./assets/DownloadOnAppStoreImage";
 
 const images = ["initial", "empty", "search", "meaning"];
 
@@ -36,9 +37,15 @@ function App() {
                       ))}
                     </Stack>
                   </Stack>
-                  <Typography sx={classes.comingSoonText}>
-                    Coming Soon on the app store
-                  </Typography>
+                  <Box
+                    component="a"
+                    href="https://apple.co/3YPtYea"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ display: "inline-block" }}
+                  >
+                    <DownloadOnAppStoreImage />
+                  </Box>
                   <Stack
                     sx={{ flexDirection: "row", gap: 3, alignItems: "center" }}
                   >

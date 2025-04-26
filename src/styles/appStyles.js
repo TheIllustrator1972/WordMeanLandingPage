@@ -9,7 +9,7 @@ export const classes = {
     justifyContent: "center",
   },
   innerContainer: {
-    gap: 3,
+    gap: 2,
     alignItems: "center",
     width: { lg: "70%", md: "85%" },
     height: { lg: "80%", md: "90%" },
@@ -31,7 +31,7 @@ export const classes = {
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    gap: 5,
+    gap: 4,
   },
   title: {
     color: styles.color.primaryYellow,
